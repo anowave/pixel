@@ -32,7 +32,7 @@ window.anowavePixel = (() =>
     }
 
     return {
-        attach: function(analytics, browser, init, config)
+        attach: function(analytics, browser, init, config, version)
         {
             const fn = 
             {
@@ -232,7 +232,7 @@ window.anowavePixel = (() =>
                             dataLayer.push({ ecommerce: null }); 
                             dataLayer.push(payload);
 
-                            console.log("Anowave","Custom Pixel Push", config.version, payload);
+                            console.log("Anowave","Custom Pixel Push", version, payload);
 
                         });
                     })(event);
