@@ -1,10 +1,17 @@
-window.pixel = (() => 
+window.anowave = (() => 
 {
     return {
-        attach: function(analytics, config)
+        attach: function(analytics, browser, init)
         {
-            console.log(config);
             
+            console.log(
+                {
+                    a: analytics, 
+                    b: browser,
+                    i: init
+                }
+            );
+
             return this;
         }
     }
