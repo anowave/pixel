@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [100.1.0] - 22/10/2025
+
+### Added
+
+- Minor updates
+
 ## [100.0.9] - 22/10/2025
 
 ### Added
