@@ -1,4 +1,4 @@
-window.anowave = (() => 
+window.anowavePixel = (() => 
 {
     return {
         attach: function(analytics, browser, init)
