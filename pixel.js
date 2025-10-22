@@ -232,7 +232,7 @@ window.anowavePixel = (() =>
                             dataLayer.push({ ecommerce: null }); 
                             dataLayer.push(payload);
 
-                            console.log("Anowave","Custom Pixel Push", config.version, dataLayer);
+                            console.log("Anowave","Custom Pixel Push", config.version, payload);
 
                         });
                     })(event);
