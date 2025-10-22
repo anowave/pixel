@@ -53,7 +53,8 @@ window.anowavePixel = (() =>
                                 item_list_name:     'Checkout',
                                 price:              item?.finalLinePrice?.amount,
                                 currency:           item?.finalLinePrice?.currencyCode,
-                                quantity:           item?.quantity
+                                quantity:           item?.quantity,
+                                affiliation:        init?.data?.shop?.name
                             }
                         );
             
@@ -66,8 +67,8 @@ window.anowavePixel = (() =>
                         ecommerce: 
                         {
                             currency: event?.data?.checkout?.currencyCode,
-                                items: items,
-                                value: value
+                            items: items,
+                            value: value
                         }
                     };
                 
@@ -128,7 +129,8 @@ window.anowavePixel = (() =>
                                 item_category:      '',
                                 price:              item?.finalLinePrice?.amount,
                                 currency:           item?.finalLinePrice?.currencyCode,
-                                quantity:           item?.quantity
+                                quantity:           item?.quantity,
+                                affiliation:        init?.data?.shop?.name
                             }
                         );
 
@@ -178,7 +180,8 @@ window.anowavePixel = (() =>
                                 item_category:      '',
                                 price:              item?.finalLinePrice?.amount,
                                 currency:           item?.finalLinePrice?.currencyCode,
-                                quantity:           item?.quantity
+                                quantity:           item?.quantity,
+                                affiliation:        init?.data?.shop?.name
                             }
                         );
                     });
@@ -203,7 +206,8 @@ window.anowavePixel = (() =>
                             shipping:               checkout?.shippingLine?.price?.amount,
                             tax:                    checkout?.totalTax?.amount,
                             customer_type:          checkout?.order?.customer?.isFirstOrder ? 'new':'returning',
-                            value:                  checkout?.totalPrice?.amount
+                            value:                  checkout?.totalPrice?.amount,
+                            affiliation:            init?.data?.shop?.name
                         }
                     }
                     
@@ -255,7 +259,8 @@ window.anowavePixel = (() =>
                             item_variant:       item?.variant?.title,
                             price:              item?.finalLinePrice?.amount,
                             currency:           item?.finalLinePrice?.currencyCode,
-                            quantity:           item?.quantity
+                            quantity:           item?.quantity,
+                            affiliation:        init?.data?.shop?.name
                         }
                     );
                 });

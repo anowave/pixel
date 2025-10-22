@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [100.0.9] - 22/10/2025
+
+### Added
+
+- Added 'affiliation' parameter to items[] array
+
 ## [100.0.8] - 22/10/2025
 
 ### Added
